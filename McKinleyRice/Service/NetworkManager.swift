@@ -14,7 +14,8 @@ enum NetworkError: Error {
 }
 class NetworkManager {
     
-    static let shared = NetworkManager() // Singleton instance
+    static let shared = NetworkManager()
+    let imageStorage = ImageStorage()
     private let baseURL = "https://reqres.in/api/"
     
     private init() {}
@@ -49,5 +50,23 @@ class NetworkManager {
             }
         }
         task.resume()
+    }
+    
+    func loadImage(fromUrl request: URLRequest) async -> Data? {
+        do {
+            let (responseData, serverUrlResponse) = try await URLSession.shared.data(for: request)
+            guard let httpResponse = serverUrlResponse as? HTTPURLResponse else {
+                return nil
+            }
+            
+            if 200..<300 ~= httpResponse.statusCode{
+                return responseData
+            } else {
+                return nil
+            }
+            
+        } catch {
+            return nil
+        }
     }
 }

@@ -21,16 +21,24 @@
 		B776F71C2A68DA71002E8363 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F71B2A68DA71002E8363 /* LoginPresenter.swift */; };
 		B776F71E2A68DAB5002E8363 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F71D2A68DAB5002E8363 /* LoginModels.swift */; };
 		B776F7202A68DACD002E8363 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F71F2A68DACD002E8363 /* LoginRouter.swift */; };
-		B776F7232A68DEC8002E8363 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7222A68DEC8002E8363 /* AppConstant.swift */; };
 		B776F7262A68E2BD002E8363 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7252A68E2BD002E8363 /* NetworkManager.swift */; };
 		B776F7282A68E31F002E8363 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7272A68E31F002E8363 /* APIManager.swift */; };
-		B776F72C2A68E42F002E8363 /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F72B2A68E42F002E8363 /* ValidationManager.swift */; };
 		B776F72F2A68E860002E8363 /* UIViewController+McKinleyRiceAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F72E2A68E860002E8363 /* UIViewController+McKinleyRiceAlert.swift */; };
 		B776F7322A68EB5F002E8363 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7312A68EB5F002E8363 /* RegisterViewController.swift */; };
 		B776F7342A68EBA7002E8363 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7332A68EBA7002E8363 /* RegisterInteractor.swift */; };
 		B776F7362A68EBB3002E8363 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7352A68EBB3002E8363 /* RegisterPresenter.swift */; };
 		B776F7382A68EBBB002E8363 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7372A68EBBB002E8363 /* RegisterRouter.swift */; };
 		B776F73A2A68EBC4002E8363 /* RegisterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7392A68EBC4002E8363 /* RegisterModels.swift */; };
+		B776F73D2A68F7E8002E8363 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F73C2A68F7E8002E8363 /* ContactListViewController.swift */; };
+		B776F7412A68F849002E8363 /* ContactListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F73F2A68F849002E8363 /* ContactListCellTableViewCell.swift */; };
+		B776F7422A68F849002E8363 /* ContactListCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B776F7402A68F849002E8363 /* ContactListCellTableViewCell.xib */; };
+		B776F7442A68F8A6002E8363 /* ContactListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7432A68F8A6002E8363 /* ContactListInteractor.swift */; };
+		B776F7462A68F8DF002E8363 /* ContactListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7452A68F8DF002E8363 /* ContactListPresenter.swift */; };
+		B776F7482A68F8EE002E8363 /* ContactListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7472A68F8EE002E8363 /* ContactListModels.swift */; };
+		B776F74A2A68F8FE002E8363 /* ContactListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7492A68F8FE002E8363 /* ContactListRouter.swift */; };
+		B776F74C2A68FBA8002E8363 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F74B2A68FBA8002E8363 /* ImageCache.swift */; };
+		B776F7502A6905DF002E8363 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F74F2A6905DF002E8363 /* AppConstant.swift */; };
+		B776F7522A6906D1002E8363 /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7512A6906D1002E8363 /* ValidationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,16 +77,24 @@
 		B776F71B2A68DA71002E8363 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		B776F71D2A68DAB5002E8363 /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
 		B776F71F2A68DACD002E8363 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
-		B776F7222A68DEC8002E8363 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		B776F7252A68E2BD002E8363 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B776F7272A68E31F002E8363 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		B776F72B2A68E42F002E8363 /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
 		B776F72E2A68E860002E8363 /* UIViewController+McKinleyRiceAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+McKinleyRiceAlert.swift"; sourceTree = "<group>"; };
 		B776F7312A68EB5F002E8363 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B776F7332A68EBA7002E8363 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
 		B776F7352A68EBB3002E8363 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		B776F7372A68EBBB002E8363 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
 		B776F7392A68EBC4002E8363 /* RegisterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModels.swift; sourceTree = "<group>"; };
+		B776F73C2A68F7E8002E8363 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		B776F73F2A68F849002E8363 /* ContactListCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListCellTableViewCell.swift; sourceTree = "<group>"; };
+		B776F7402A68F849002E8363 /* ContactListCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactListCellTableViewCell.xib; sourceTree = "<group>"; };
+		B776F7432A68F8A6002E8363 /* ContactListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListInteractor.swift; sourceTree = "<group>"; };
+		B776F7452A68F8DF002E8363 /* ContactListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListPresenter.swift; sourceTree = "<group>"; };
+		B776F7472A68F8EE002E8363 /* ContactListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListModels.swift; sourceTree = "<group>"; };
+		B776F7492A68F8FE002E8363 /* ContactListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListRouter.swift; sourceTree = "<group>"; };
+		B776F74B2A68FBA8002E8363 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		B776F74F2A6905DF002E8363 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		B776F7512A6906D1002E8363 /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +180,7 @@
 		B776F7152A68D941002E8363 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B776F73B2A68F7C7002E8363 /* ContactList */,
 				B776F7302A68EB4A002E8363 /* Register */,
 				B776F7162A68D958002E8363 /* LoginScene */,
 			);
@@ -185,8 +202,8 @@
 		B776F7212A68DEB8002E8363 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				B776F7222A68DEC8002E8363 /* AppConstant.swift */,
-				B776F72B2A68E42F002E8363 /* ValidationManager.swift */,
+				B776F74F2A6905DF002E8363 /* AppConstant.swift */,
+				B776F7512A6906D1002E8363 /* ValidationManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -196,6 +213,7 @@
 			children = (
 				B776F7252A68E2BD002E8363 /* NetworkManager.swift */,
 				B776F7272A68E31F002E8363 /* APIManager.swift */,
+				B776F74B2A68FBA8002E8363 /* ImageCache.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -218,6 +236,28 @@
 				B776F7392A68EBC4002E8363 /* RegisterModels.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		B776F73B2A68F7C7002E8363 /* ContactList */ = {
+			isa = PBXGroup;
+			children = (
+				B776F73E2A68F819002E8363 /* ContactListCell */,
+				B776F73C2A68F7E8002E8363 /* ContactListViewController.swift */,
+				B776F7432A68F8A6002E8363 /* ContactListInteractor.swift */,
+				B776F7452A68F8DF002E8363 /* ContactListPresenter.swift */,
+				B776F7472A68F8EE002E8363 /* ContactListModels.swift */,
+				B776F7492A68F8FE002E8363 /* ContactListRouter.swift */,
+			);
+			path = ContactList;
+			sourceTree = "<group>";
+		};
+		B776F73E2A68F819002E8363 /* ContactListCell */ = {
+			isa = PBXGroup;
+			children = (
+				B776F73F2A68F849002E8363 /* ContactListCellTableViewCell.swift */,
+				B776F7402A68F849002E8363 /* ContactListCellTableViewCell.xib */,
+			);
+			path = ContactListCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B776F7422A68F849002E8363 /* ContactListCellTableViewCell.xib in Resources */,
 				B776F6F22A68D87C002E8363 /* LaunchScreen.storyboard in Resources */,
 				B776F6EF2A68D87C002E8363 /* Assets.xcassets in Resources */,
 				B776F6ED2A68D87B002E8363 /* Main.storyboard in Resources */,
@@ -351,22 +392,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B776F7412A68F849002E8363 /* ContactListCellTableViewCell.swift in Sources */,
+				B776F7462A68F8DF002E8363 /* ContactListPresenter.swift in Sources */,
 				B776F73A2A68EBC4002E8363 /* RegisterModels.swift in Sources */,
-				B776F7232A68DEC8002E8363 /* AppConstant.swift in Sources */,
 				B776F71C2A68DA71002E8363 /* LoginPresenter.swift in Sources */,
 				B776F7262A68E2BD002E8363 /* NetworkManager.swift in Sources */,
 				B776F7182A68D9A2002E8363 /* LoginViewController.swift in Sources */,
 				B776F7282A68E31F002E8363 /* APIManager.swift in Sources */,
 				B776F71E2A68DAB5002E8363 /* LoginModels.swift in Sources */,
+				B776F7482A68F8EE002E8363 /* ContactListModels.swift in Sources */,
+				B776F74C2A68FBA8002E8363 /* ImageCache.swift in Sources */,
 				B776F7342A68EBA7002E8363 /* RegisterInteractor.swift in Sources */,
+				B776F74A2A68F8FE002E8363 /* ContactListRouter.swift in Sources */,
 				B776F6EA2A68D87B002E8363 /* ViewController.swift in Sources */,
 				B776F72F2A68E860002E8363 /* UIViewController+McKinleyRiceAlert.swift in Sources */,
 				B776F6E62A68D87B002E8363 /* AppDelegate.swift in Sources */,
+				B776F7522A6906D1002E8363 /* ValidationManager.swift in Sources */,
+				B776F7502A6905DF002E8363 /* AppConstant.swift in Sources */,
+				B776F73D2A68F7E8002E8363 /* ContactListViewController.swift in Sources */,
 				B776F7322A68EB5F002E8363 /* RegisterViewController.swift in Sources */,
 				B776F71A2A68DA23002E8363 /* LoginInteractor.swift in Sources */,
 				B776F7202A68DACD002E8363 /* LoginRouter.swift in Sources */,
-				B776F72C2A68E42F002E8363 /* ValidationManager.swift in Sources */,
 				B776F7382A68EBBB002E8363 /* RegisterRouter.swift in Sources */,
+				B776F7442A68F8A6002E8363 /* ContactListInteractor.swift in Sources */,
 				B776F6E82A68D87B002E8363 /* SceneDelegate.swift in Sources */,
 				B776F7362A68EBB3002E8363 /* RegisterPresenter.swift in Sources */,
 			);

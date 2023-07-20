@@ -301,7 +301,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="Isf-Lq-Y4Y"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="18"/>
-                                                <state key="normal" title="Register">
+                                                <state key="normal" title="Login">
                                                     <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -337,7 +337,56 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sS4-Hy-4XL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5327" y="-1363"/>
+            <point key="canvasLocation" x="3526" y="111"/>
+        </scene>
+        <!--Contact List View Controller-->
+        <scene sceneID="7AT-aB-rGR">
+            <objects>
+                <viewController storyboardIdentifier="ContactListViewController" id="3NV-nC-w8p" customClass="ContactListViewController" customModule="McKinleyRice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CEV-Hh-gW3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="128" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LBO-Qu-eXh">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="3NV-nC-w8p" id="3F1-Yd-yM8"/>
+                                    <outlet property="delegate" destination="3NV-nC-w8p" id="ZcF-K0-Ub8"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jcq-x4-BT2">
+                                <rect key="frame" x="325" y="754" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.35686278339999999" green="0.78039217000000005" blue="0.65882354970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="CK6-Id-hcm"/>
+                                    <constraint firstAttribute="height" constant="44" id="miP-0n-Yk6"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Egw-3v-AGq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Egw-3v-AGq" firstAttribute="trailing" secondItem="LBO-Qu-eXh" secondAttribute="trailing" id="0nC-a6-PRt"/>
+                            <constraint firstItem="Egw-3v-AGq" firstAttribute="bottom" secondItem="Jcq-x4-BT2" secondAttribute="bottom" constant="20" id="4gI-GC-zVH"/>
+                            <constraint firstItem="Egw-3v-AGq" firstAttribute="bottom" secondItem="LBO-Qu-eXh" secondAttribute="bottom" id="dOn-Er-1dC"/>
+                            <constraint firstItem="LBO-Qu-eXh" firstAttribute="leading" secondItem="Egw-3v-AGq" secondAttribute="leading" id="hvE-ZC-mT1"/>
+                            <constraint firstItem="Egw-3v-AGq" firstAttribute="trailing" secondItem="Jcq-x4-BT2" secondAttribute="trailing" constant="24" id="ilb-XZ-olL"/>
+                            <constraint firstItem="LBO-Qu-eXh" firstAttribute="top" secondItem="Egw-3v-AGq" secondAttribute="top" id="xtG-ma-kh4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AddContact" destination="Jcq-x4-BT2" id="JtE-Yn-G1n"/>
+                        <outlet property="contactListTableView" destination="LBO-Qu-eXh" id="us0-VG-9IC"/>
+                        <outlet property="view" destination="CEV-Hh-gW3" id="x3V-uW-Asc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b9l-s3-xWX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3526" y="938"/>
         </scene>
     </scenes>
     <resources>

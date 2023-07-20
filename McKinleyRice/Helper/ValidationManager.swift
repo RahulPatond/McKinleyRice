@@ -1,5 +1,5 @@
 //
-//  AppValidation.swift
+//  ValidationManager.swift
 //  McKinleyRice
 //
 //  Created by Rahul Patond on 20/07/23.
@@ -9,9 +9,9 @@ import Foundation
 
 
 class ValidationManager {
-    
     static let shared = ValidationManager()
-    private init () {}
+    
+    private init() {}
     
     func isValidEmail(_ email: String) -> Bool {
         // Regular expression pattern for email validation

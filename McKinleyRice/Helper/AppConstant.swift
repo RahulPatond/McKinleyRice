@@ -9,6 +9,6 @@ import Foundation
 import UIKit
 
 struct AppConstant {
-    static let baseURL = "https://mocki.io/v1"
+    static let noImage = "contactDefault"
     static let NavigationColor = UIColor(red: 91/255.0, green: 199/255.0, blue: 168/255.0, alpha: 1.0)
 }

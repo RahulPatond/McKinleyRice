@@ -42,7 +42,13 @@ class LoginRouter: LoginRoutingLogic {
     }
     
     func routeToContactList() {
-        
+        let contactListViewController = ContactListRouter.assemble()
+//        let navigationController =
+
+        DispatchQueue.main.async {
+            let nav = self.viewController?.navigationController
+            nav?.viewControllers = [contactListViewController]
+        }
        
     }
 }
