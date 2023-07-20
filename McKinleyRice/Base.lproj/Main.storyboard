@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rte-6D-Uzh">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -45,7 +45,7 @@
                                                                 <color key="textColor" red="0.2672548294" green="0.36402100320000003" blue="0.41836553809999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4o-ag-fLA" customClass="RoundedEndView" customModule="DPAPP" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4o-ag-fLA">
                                                                 <rect key="frame" x="0.0" y="34" width="365" height="30"/>
                                                                 <subviews>
                                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tbJ-AF-ta6">
@@ -91,17 +91,6 @@
                                                                         <state key="normal" title="forgot password?">
                                                                             <color key="titleColor" red="0.47058823529999999" green="0.58823529409999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </state>
-                                                                        <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
-                                                                                <real key="value" value="9"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                                <real key="value" value="1"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                                <color key="value" red="0.47058823529999999" green="0.58823529409999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                        </userDefinedRuntimeAttributes>
                                                                         <connections>
                                                                             <action selector="forgetPasswordButtonClicked:" destination="rte-6D-Uzh" eventType="touchUpInside" id="wUO-ma-dJY"/>
                                                                         </connections>
@@ -117,7 +106,7 @@
                                                                     <constraint firstItem="02U-gK-3JP" firstAttribute="centerY" secondItem="PMN-YL-1wZ" secondAttribute="centerY" id="zrN-JY-E7t"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B2c-6M-2bn" customClass="RoundedEndView" customModule="DPAPP" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B2c-6M-2bn">
                                                                 <rect key="frame" x="0.0" y="30" width="365" height="30"/>
                                                                 <subviews>
                                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="33R-aj-hHE">
@@ -173,14 +162,6 @@
                                                 <state key="normal" title="Login">
                                                     <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
-                                                        <real key="value" value="20"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="0.0"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="loginButtonClicked:" destination="rte-6D-Uzh" eventType="touchUpInside" id="6Ny-tZ-kFI"/>
                                                 </connections>
@@ -189,16 +170,22 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="wud-9B-saS">
+                                <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HYD-Qm-ibF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="wud-9B-saS" firstAttribute="centerY" secondItem="5t7-SX-pa0" secondAttribute="centerY" id="ACw-x3-D4g"/>
+                            <constraint firstItem="wud-9B-saS" firstAttribute="centerX" secondItem="5t7-SX-pa0" secondAttribute="centerX" id="CSj-8n-MpS"/>
                             <constraint firstItem="gMX-fW-bhq" firstAttribute="centerX" secondItem="5t7-SX-pa0" secondAttribute="centerX" id="PLb-pf-hSo"/>
                             <constraint firstItem="gMX-fW-bhq" firstAttribute="centerY" secondItem="5t7-SX-pa0" secondAttribute="centerY" id="xmW-dC-jXR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JOr-oi-GhW"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="wud-9B-saS" id="V4Y-nB-Y8N"/>
                         <outlet property="emailTextField" destination="tbJ-AF-ta6" id="SPz-rI-t2A"/>
                         <outlet property="passwordTextField" destination="33R-aj-hHE" id="ZNH-Dc-XFT"/>
                         <outlet property="view" destination="5t7-SX-pa0" id="uc1-j0-6wl"/>

@@ -8,6 +8,8 @@
 import UIKit
 
 protocol LoginRoutingLogic {
+    func routeToContactList()
+    func routeToRegister()
 }
 
 class LoginRouter: LoginRoutingLogic {
@@ -30,5 +32,13 @@ class LoginRouter: LoginRoutingLogic {
         viewController.interactor = interactor
         
         return viewController
+    }
+    
+    func routeToRegister() {
+        
+    }
+    
+    func routeToContactList() {
+        
     }
 }
