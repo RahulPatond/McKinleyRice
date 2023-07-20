@@ -24,7 +24,8 @@ class ContactListViewController: UIViewController, ContactListDisplayLogic {
     
     @IBOutlet weak var contactListTableView: UITableView!
     @IBOutlet weak var AddContact: UIButton!
-
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     var users: [User] = [User]()
     
     //we can use this in future for pagination
@@ -37,10 +38,14 @@ class ContactListViewController: UIViewController, ContactListDisplayLogic {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         getUserList()
     }
     override func viewWillAppear(_ animated: Bool) {
-            super.viewWillAppear(animated)
+        super.viewWillAppear(animated)
     }
     
     // MARK: - Private methods
@@ -59,18 +64,31 @@ class ContactListViewController: UIViewController, ContactListDisplayLogic {
     }
     
     
-   private func getUserList() {
+    private func getUserList() {
+        activityStartAnimating()
         let request = Contact.ContactList.Request(page: currentPageNumber + 1)
         interactor?.getUsers(request: request)
-   }
+    }
     
     @objc func menuTapped() {
+    }
+    
+    private func activityStartAnimating() {
+        DispatchQueue.main.async {
+            self.activityIndicator.startAnimating()
+        }
+    }
+    
+    private func activityStopAnimating() {
+        DispatchQueue.main.async {
+            self.activityIndicator.stopAnimating()
+        }
     }
     
     
     // MARK: - ContactListDisplayLogic methods
     func displayContactList(viewModel: Contact.ContactList.ViewModel) {
-        
+        activityStopAnimating()
         if viewModel.errorMessage == nil {
             if let fetchedUsers = viewModel.users {
                 users.append(contentsOf: fetchedUsers)

@@ -347,9 +347,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="eBh-1e-9UJ">
+                                <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                            </activityIndicatorView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="128" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LBO-Qu-eXh">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="mYS-IR-ANn">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </activityIndicatorView>
                                 <connections>
                                     <outlet property="dataSource" destination="3NV-nC-w8p" id="3F1-Yd-yM8"/>
                                     <outlet property="delegate" destination="3NV-nC-w8p" id="ZcF-K0-Ub8"/>
@@ -372,14 +379,17 @@
                         <constraints>
                             <constraint firstItem="Egw-3v-AGq" firstAttribute="trailing" secondItem="LBO-Qu-eXh" secondAttribute="trailing" id="0nC-a6-PRt"/>
                             <constraint firstItem="Egw-3v-AGq" firstAttribute="bottom" secondItem="Jcq-x4-BT2" secondAttribute="bottom" constant="20" id="4gI-GC-zVH"/>
+                            <constraint firstItem="eBh-1e-9UJ" firstAttribute="centerY" secondItem="CEV-Hh-gW3" secondAttribute="centerY" id="YgG-Jt-LER"/>
                             <constraint firstItem="Egw-3v-AGq" firstAttribute="bottom" secondItem="LBO-Qu-eXh" secondAttribute="bottom" id="dOn-Er-1dC"/>
                             <constraint firstItem="LBO-Qu-eXh" firstAttribute="leading" secondItem="Egw-3v-AGq" secondAttribute="leading" id="hvE-ZC-mT1"/>
                             <constraint firstItem="Egw-3v-AGq" firstAttribute="trailing" secondItem="Jcq-x4-BT2" secondAttribute="trailing" constant="24" id="ilb-XZ-olL"/>
+                            <constraint firstItem="eBh-1e-9UJ" firstAttribute="centerX" secondItem="CEV-Hh-gW3" secondAttribute="centerX" id="qDN-nw-inQ"/>
                             <constraint firstItem="LBO-Qu-eXh" firstAttribute="top" secondItem="Egw-3v-AGq" secondAttribute="top" id="xtG-ma-kh4"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="AddContact" destination="Jcq-x4-BT2" id="JtE-Yn-G1n"/>
+                        <outlet property="activityIndicator" destination="eBh-1e-9UJ" id="4n3-sQ-9Kb"/>
                         <outlet property="contactListTableView" destination="LBO-Qu-eXh" id="us0-VG-9IC"/>
                         <outlet property="view" destination="CEV-Hh-gW3" id="x3V-uW-Asc"/>
                     </connections>
