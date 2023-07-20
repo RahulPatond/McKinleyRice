@@ -8,7 +8,16 @@
 import Foundation
 
 protocol LoginBusinessLogic {
+    func login(request: Login.Request)
 }
 
+
 class LoginInteractor: LoginBusinessLogic {
+    
+    var presenter: LoginPresentationLogic?
+    
+    // MARK: LoginRegistrationBusinessLogic methods
+    
+    func login(request: Login.Request) {
+    }
 }
