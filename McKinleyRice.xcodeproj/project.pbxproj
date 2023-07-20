@@ -26,6 +26,11 @@
 		B776F7282A68E31F002E8363 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7272A68E31F002E8363 /* APIManager.swift */; };
 		B776F72C2A68E42F002E8363 /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F72B2A68E42F002E8363 /* ValidationManager.swift */; };
 		B776F72F2A68E860002E8363 /* UIViewController+McKinleyRiceAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F72E2A68E860002E8363 /* UIViewController+McKinleyRiceAlert.swift */; };
+		B776F7322A68EB5F002E8363 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7312A68EB5F002E8363 /* RegisterViewController.swift */; };
+		B776F7342A68EBA7002E8363 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7332A68EBA7002E8363 /* RegisterInteractor.swift */; };
+		B776F7362A68EBB3002E8363 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7352A68EBB3002E8363 /* RegisterPresenter.swift */; };
+		B776F7382A68EBBB002E8363 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7372A68EBBB002E8363 /* RegisterRouter.swift */; };
+		B776F73A2A68EBC4002E8363 /* RegisterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7392A68EBC4002E8363 /* RegisterModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +74,11 @@
 		B776F7272A68E31F002E8363 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		B776F72B2A68E42F002E8363 /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
 		B776F72E2A68E860002E8363 /* UIViewController+McKinleyRiceAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+McKinleyRiceAlert.swift"; sourceTree = "<group>"; };
+		B776F7312A68EB5F002E8363 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B776F7332A68EBA7002E8363 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		B776F7352A68EBB3002E8363 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		B776F7372A68EBBB002E8363 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
+		B776F7392A68EBC4002E8363 /* RegisterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +164,7 @@
 		B776F7152A68D941002E8363 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B776F7302A68EB4A002E8363 /* Register */,
 				B776F7162A68D958002E8363 /* LoginScene */,
 			);
 			path = Scenes;
@@ -195,6 +206,18 @@
 				B776F72E2A68E860002E8363 /* UIViewController+McKinleyRiceAlert.swift */,
 			);
 			path = Extentions;
+			sourceTree = "<group>";
+		};
+		B776F7302A68EB4A002E8363 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				B776F7312A68EB5F002E8363 /* RegisterViewController.swift */,
+				B776F7332A68EBA7002E8363 /* RegisterInteractor.swift */,
+				B776F7352A68EBB3002E8363 /* RegisterPresenter.swift */,
+				B776F7372A68EBBB002E8363 /* RegisterRouter.swift */,
+				B776F7392A68EBC4002E8363 /* RegisterModels.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,19 +351,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B776F73A2A68EBC4002E8363 /* RegisterModels.swift in Sources */,
 				B776F7232A68DEC8002E8363 /* AppConstant.swift in Sources */,
 				B776F71C2A68DA71002E8363 /* LoginPresenter.swift in Sources */,
 				B776F7262A68E2BD002E8363 /* NetworkManager.swift in Sources */,
 				B776F7182A68D9A2002E8363 /* LoginViewController.swift in Sources */,
 				B776F7282A68E31F002E8363 /* APIManager.swift in Sources */,
 				B776F71E2A68DAB5002E8363 /* LoginModels.swift in Sources */,
+				B776F7342A68EBA7002E8363 /* RegisterInteractor.swift in Sources */,
 				B776F6EA2A68D87B002E8363 /* ViewController.swift in Sources */,
 				B776F72F2A68E860002E8363 /* UIViewController+McKinleyRiceAlert.swift in Sources */,
 				B776F6E62A68D87B002E8363 /* AppDelegate.swift in Sources */,
+				B776F7322A68EB5F002E8363 /* RegisterViewController.swift in Sources */,
 				B776F71A2A68DA23002E8363 /* LoginInteractor.swift in Sources */,
 				B776F7202A68DACD002E8363 /* LoginRouter.swift in Sources */,
 				B776F72C2A68E42F002E8363 /* ValidationManager.swift in Sources */,
+				B776F7382A68EBBB002E8363 /* RegisterRouter.swift in Sources */,
 				B776F6E82A68D87B002E8363 /* SceneDelegate.swift in Sources */,
+				B776F7362A68EBB3002E8363 /* RegisterPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

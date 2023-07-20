@@ -34,4 +34,24 @@ class APIManager {
             }
         }
     }
+    
+    func register(email: String, password: String, completion: @escaping (Result<RegistrationResponse, Error>) -> Void) {
+        
+        let endpoint = "register"
+        let parameters = ["email": email, "password": password]
+        NetworkManager.shared.request(endpoint: endpoint, method: "POST", parameters: parameters) { result in
+            
+            switch result {
+            case .success(let data):
+                do {
+                    let response = try JSONDecoder().decode(RegistrationResponse.self, from: data)
+                    completion(.success(response))
+                } catch {
+                    completion(.failure(error))
+                }
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
 }

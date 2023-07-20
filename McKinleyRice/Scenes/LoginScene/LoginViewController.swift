@@ -24,13 +24,11 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        emailTextField.text = "eve.holt@reqres.in"
-        passwordTextField.text = "cityslicka"
     }
     
     // MARK: - Private methods
     private func setupUI() {
-        self.title = "Login"
+        self.title = "LOGIN"
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = AppConstant.NavigationColor
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
@@ -79,6 +77,7 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
     }
     
     @IBAction func registerButtonClicked(_ sender: Any) {
+        router?.routeToRegister()
     }
     
     @IBAction func forgetPasswordButtonClicked(_ sender: Any) {

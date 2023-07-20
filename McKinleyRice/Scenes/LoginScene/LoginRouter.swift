@@ -35,10 +35,14 @@ class LoginRouter: LoginRoutingLogic {
     }
     
     func routeToRegister() {
-        
+        let registerViewController = RegisterRouter.assemble()
+        DispatchQueue.main.async {
+            self.viewController?.navigationController?.pushViewController(registerViewController, animated: true)
+        }
     }
     
     func routeToContactList() {
         
+       
     }
 }
