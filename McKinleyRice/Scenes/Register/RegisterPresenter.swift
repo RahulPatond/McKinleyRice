@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 protocol RegisterPresentationLogic {
     func presentRegister(response: Registration.Response)
 }

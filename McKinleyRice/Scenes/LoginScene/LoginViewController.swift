@@ -6,10 +6,14 @@
 //
 
 import UIKit
+struct LoginViewControllerConstant {
+    static let Title = "LOGIN"
+}
 
 protocol LoginDisplayLogic: AnyObject {
     func displayLogin(viewModel: Login.ViewModel)
 }
+
 class LoginViewController: UIViewController, LoginDisplayLogic {
 
     @IBOutlet weak var emailTextField: UITextField!
@@ -28,7 +32,7 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
     
     // MARK: - Private methods
     private func setupUI() {
-        self.title = "LOGIN"
+        self.title = LoginViewControllerConstant.Title
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = AppConstant.NavigationColor
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white]

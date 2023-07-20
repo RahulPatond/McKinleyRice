@@ -34,6 +34,10 @@ class RegisterRouter: RegisterRoutingLogic {
     }
     
     func routeToContactList() {
-        
+        let contactListViewController = ContactListRouter.assemble()
+        DispatchQueue.main.async {
+            let nav = self.viewController?.navigationController
+            nav?.viewControllers = [contactListViewController]
+        }
     }
 }

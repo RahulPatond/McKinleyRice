@@ -7,9 +7,14 @@
 
 import UIKit
 
+struct RegisterViewControllerConstant {
+    static let Titel = "REGISTER"
+}
+
 protocol RegisterDisplayLogic: AnyObject {
     func displayRegister(viewModel: Registration.ViewModel)
 }
+
 class RegisterViewController: UIViewController, RegisterDisplayLogic {
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -25,7 +30,7 @@ class RegisterViewController: UIViewController, RegisterDisplayLogic {
     }
     // MARK: - Private methods
     private func setupUI() {
-        self.title = "REGISTER"
+        self.title = RegisterViewControllerConstant.Titel
     }
     
     private func activityStartAnimating() {

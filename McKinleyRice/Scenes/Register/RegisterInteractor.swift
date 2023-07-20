@@ -11,7 +11,6 @@ protocol RegisterBusinessLogic {
     func register(request: Registration.Request)
 }
 
-
 class RegisterInteractor: RegisterBusinessLogic {
     
     var presenter: RegisterPresentationLogic?
