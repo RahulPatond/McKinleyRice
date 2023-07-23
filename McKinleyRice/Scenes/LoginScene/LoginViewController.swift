@@ -71,7 +71,7 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
     // MARK: - IBAction methods
     @IBAction func loginButtonClicked(_ sender: Any) {
         guard let email = emailTextField.text, let password = passwordTextField.text, ValidationManager.shared.isValidEmail(email)  else {
-            print("Please enter valid email address and password")
+            alert(title: "Error", message: "Please enter valid email address and password")
             return
         }
         
