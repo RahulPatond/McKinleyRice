@@ -43,6 +43,7 @@
 		B78761C02A6DB86C00C0681C /* RegisterInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78761BF2A6DB86C00C0681C /* RegisterInteractorTests.swift */; };
 		B78761C22A6DBCC200C0681C /* ContactListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78761C12A6DBCC200C0681C /* ContactListInteractorTests.swift */; };
 		B78761C52A6DBF6700C0681C /* MckinleyRiceMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78761C42A6DBF6700C0681C /* MckinleyRiceMockData.swift */; };
+		B78761C72A6DC6D200C0681C /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78761C62A6DC6D200C0681C /* LoginPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		B78761BF2A6DB86C00C0681C /* RegisterInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractorTests.swift; sourceTree = "<group>"; };
 		B78761C12A6DBCC200C0681C /* ContactListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListInteractorTests.swift; sourceTree = "<group>"; };
 		B78761C42A6DBF6700C0681C /* MckinleyRiceMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MckinleyRiceMockData.swift; sourceTree = "<group>"; };
+		B78761C62A6DC6D200C0681C /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				B78761BD2A6DADBC00C0681C /* LoginInteractorTests.swift */,
 				B78761BF2A6DB86C00C0681C /* RegisterInteractorTests.swift */,
 				B78761C12A6DBCC200C0681C /* ContactListInteractorTests.swift */,
+				B78761C62A6DC6D200C0681C /* LoginPresenterTests.swift */,
 			);
 			path = McKinleyRiceTests;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				B78761C52A6DBF6700C0681C /* MckinleyRiceMockData.swift in Sources */,
 				B776F6FD2A68D87C002E8363 /* McKinleyRiceTests.swift in Sources */,
 				B78761C22A6DBCC200C0681C /* ContactListInteractorTests.swift in Sources */,
+				B78761C72A6DC6D200C0681C /* LoginPresenterTests.swift in Sources */,
 				B78761C02A6DB86C00C0681C /* RegisterInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
