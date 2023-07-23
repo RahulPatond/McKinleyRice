@@ -8,14 +8,14 @@
 import Foundation
 
 protocol ContactListPresentationLogic {
-    func present(response: Contact.ContactList.Response)
+    func presentContactList(response: Contact.ContactList.Response)
 }
 
 class ContactListPresenter: ContactListPresentationLogic {
     
     weak var viewController: ContactListDisplayLogic?
     
-    func present(response: Contact.ContactList.Response) {
+    func presentContactList(response: Contact.ContactList.Response) {
         let viewModel: Contact.ContactList.ViewModel
         
         if response.error == nil {

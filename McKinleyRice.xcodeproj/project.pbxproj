@@ -41,6 +41,8 @@
 		B776F7522A6906D1002E8363 /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7512A6906D1002E8363 /* ValidationManager.swift */; };
 		B78761BE2A6DADBC00C0681C /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78761BD2A6DADBC00C0681C /* LoginInteractorTests.swift */; };
 		B78761C02A6DB86C00C0681C /* RegisterInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78761BF2A6DB86C00C0681C /* RegisterInteractorTests.swift */; };
+		B78761C22A6DBCC200C0681C /* ContactListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78761C12A6DBCC200C0681C /* ContactListInteractorTests.swift */; };
+		B78761C52A6DBF6700C0681C /* MckinleyRiceMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78761C42A6DBF6700C0681C /* MckinleyRiceMockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,8 @@
 		B776F7512A6906D1002E8363 /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
 		B78761BD2A6DADBC00C0681C /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
 		B78761BF2A6DB86C00C0681C /* RegisterInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractorTests.swift; sourceTree = "<group>"; };
+		B78761C12A6DBCC200C0681C /* ContactListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListInteractorTests.swift; sourceTree = "<group>"; };
+		B78761C42A6DBF6700C0681C /* MckinleyRiceMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MckinleyRiceMockData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,9 +171,11 @@
 		B776F6FB2A68D87C002E8363 /* McKinleyRiceTests */ = {
 			isa = PBXGroup;
 			children = (
+				B78761C32A6DBF1B00C0681C /* MockData */,
 				B776F6FC2A68D87C002E8363 /* McKinleyRiceTests.swift */,
 				B78761BD2A6DADBC00C0681C /* LoginInteractorTests.swift */,
 				B78761BF2A6DB86C00C0681C /* RegisterInteractorTests.swift */,
+				B78761C12A6DBCC200C0681C /* ContactListInteractorTests.swift */,
 			);
 			path = McKinleyRiceTests;
 			sourceTree = "<group>";
@@ -264,6 +270,14 @@
 				B776F7402A68F849002E8363 /* ContactListCellTableViewCell.xib */,
 			);
 			path = ContactListCell;
+			sourceTree = "<group>";
+		};
+		B78761C32A6DBF1B00C0681C /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				B78761C42A6DBF6700C0681C /* MckinleyRiceMockData.swift */,
+			);
+			path = MockData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,7 +445,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B78761BE2A6DADBC00C0681C /* LoginInteractorTests.swift in Sources */,
+				B78761C52A6DBF6700C0681C /* MckinleyRiceMockData.swift in Sources */,
 				B776F6FD2A68D87C002E8363 /* McKinleyRiceTests.swift in Sources */,
+				B78761C22A6DBCC200C0681C /* ContactListInteractorTests.swift in Sources */,
 				B78761C02A6DB86C00C0681C /* RegisterInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

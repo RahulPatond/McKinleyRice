@@ -25,7 +25,7 @@ class ContactListInteractor: ContactListBusinessLogic {
             case .failure(let error):
                 response = Contact.ContactList.Response(page: nil, totalPages: nil, data: nil, error: error)
             }
-            self.presenter?.present(response: response)
+            self.presenter?.presentContactList(response: response)
         }
     }
 }
