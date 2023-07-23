@@ -42,8 +42,8 @@ class LoginRouter: LoginRoutingLogic {
     }
     
     func routeToContactList() {
-        let contactListViewController = ContactListRouter.assemble()
         DispatchQueue.main.async {
+            let contactListViewController = ContactListRouter.assemble()
             let nav = self.viewController?.navigationController
             nav?.viewControllers = [contactListViewController]
         }
