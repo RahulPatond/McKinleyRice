@@ -45,6 +45,7 @@
 		B78761C52A6DBF6700C0681C /* MckinleyRiceMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78761C42A6DBF6700C0681C /* MckinleyRiceMockData.swift */; };
 		B78761C72A6DC6D200C0681C /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78761C62A6DC6D200C0681C /* LoginPresenterTests.swift */; };
 		B78761C92A6DCDB500C0681C /* RegisterPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78761C82A6DCDB500C0681C /* RegisterPresenterTests.swift */; };
+		B78761CE2A6DD12700C0681C /* ContactListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78761CD2A6DD12700C0681C /* ContactListPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		B78761C42A6DBF6700C0681C /* MckinleyRiceMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MckinleyRiceMockData.swift; sourceTree = "<group>"; };
 		B78761C62A6DC6D200C0681C /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
 		B78761C82A6DCDB500C0681C /* RegisterPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenterTests.swift; sourceTree = "<group>"; };
+		B78761CD2A6DD12700C0681C /* ContactListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,13 +177,11 @@
 		B776F6FB2A68D87C002E8363 /* McKinleyRiceTests */ = {
 			isa = PBXGroup;
 			children = (
+				B78761CC2A6DD0F300C0681C /* ContactListScene */,
+				B78761CB2A6DD0DA00C0681C /* RegisterScene */,
+				B78761CA2A6DD0B400C0681C /* LoginScene */,
 				B78761C32A6DBF1B00C0681C /* MockData */,
 				B776F6FC2A68D87C002E8363 /* McKinleyRiceTests.swift */,
-				B78761BD2A6DADBC00C0681C /* LoginInteractorTests.swift */,
-				B78761BF2A6DB86C00C0681C /* RegisterInteractorTests.swift */,
-				B78761C12A6DBCC200C0681C /* ContactListInteractorTests.swift */,
-				B78761C62A6DC6D200C0681C /* LoginPresenterTests.swift */,
-				B78761C82A6DCDB500C0681C /* RegisterPresenterTests.swift */,
 			);
 			path = McKinleyRiceTests;
 			sourceTree = "<group>";
@@ -284,6 +284,33 @@
 				B78761C42A6DBF6700C0681C /* MckinleyRiceMockData.swift */,
 			);
 			path = MockData;
+			sourceTree = "<group>";
+		};
+		B78761CA2A6DD0B400C0681C /* LoginScene */ = {
+			isa = PBXGroup;
+			children = (
+				B78761BD2A6DADBC00C0681C /* LoginInteractorTests.swift */,
+				B78761C62A6DC6D200C0681C /* LoginPresenterTests.swift */,
+			);
+			path = LoginScene;
+			sourceTree = "<group>";
+		};
+		B78761CB2A6DD0DA00C0681C /* RegisterScene */ = {
+			isa = PBXGroup;
+			children = (
+				B78761C82A6DCDB500C0681C /* RegisterPresenterTests.swift */,
+				B78761BF2A6DB86C00C0681C /* RegisterInteractorTests.swift */,
+			);
+			path = RegisterScene;
+			sourceTree = "<group>";
+		};
+		B78761CC2A6DD0F300C0681C /* ContactListScene */ = {
+			isa = PBXGroup;
+			children = (
+				B78761C12A6DBCC200C0681C /* ContactListInteractorTests.swift */,
+				B78761CD2A6DD12700C0681C /* ContactListPresenterTests.swift */,
+			);
+			path = ContactListScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,6 +482,7 @@
 				B776F6FD2A68D87C002E8363 /* McKinleyRiceTests.swift in Sources */,
 				B78761C22A6DBCC200C0681C /* ContactListInteractorTests.swift in Sources */,
 				B78761C72A6DC6D200C0681C /* LoginPresenterTests.swift in Sources */,
+				B78761CE2A6DD12700C0681C /* ContactListPresenterTests.swift in Sources */,
 				B78761C02A6DB86C00C0681C /* RegisterInteractorTests.swift in Sources */,
 				B78761C92A6DCDB500C0681C /* RegisterPresenterTests.swift in Sources */,
 			);

@@ -22,7 +22,6 @@ final class ContactListInteractorTests: XCTestCase {
     }
     
     func testContactList() {
-        // Given
         let spyPresenter = ContactListPresentationLogicSpy()
         interactor.presenter = spyPresenter
         let request = Contact.ContactList.Request(page: 1)
