@@ -50,6 +50,7 @@ class ContactListCellTableViewCell: UITableViewCell {
     }
     func configure(user: User) {
         nameLabel.text = "\(user.first_name ?? "") " + "\(user.last_name ?? "")"
+        companyNameLabel.text = "McKinley Rice"
         
         Task {
             if let imageStr = user.avatar {
