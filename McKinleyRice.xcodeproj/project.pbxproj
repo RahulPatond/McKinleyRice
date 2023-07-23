@@ -40,6 +40,7 @@
 		B776F7502A6905DF002E8363 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F74F2A6905DF002E8363 /* AppConstant.swift */; };
 		B776F7522A6906D1002E8363 /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776F7512A6906D1002E8363 /* ValidationManager.swift */; };
 		B78761BE2A6DADBC00C0681C /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78761BD2A6DADBC00C0681C /* LoginInteractorTests.swift */; };
+		B78761C02A6DB86C00C0681C /* RegisterInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78761BF2A6DB86C00C0681C /* RegisterInteractorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		B776F74F2A6905DF002E8363 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		B776F7512A6906D1002E8363 /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
 		B78761BD2A6DADBC00C0681C /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
+		B78761BF2A6DB86C00C0681C /* RegisterInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			children = (
 				B776F6FC2A68D87C002E8363 /* McKinleyRiceTests.swift */,
 				B78761BD2A6DADBC00C0681C /* LoginInteractorTests.swift */,
+				B78761BF2A6DB86C00C0681C /* RegisterInteractorTests.swift */,
 			);
 			path = McKinleyRiceTests;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 			files = (
 				B78761BE2A6DADBC00C0681C /* LoginInteractorTests.swift in Sources */,
 				B776F6FD2A68D87C002E8363 /* McKinleyRiceTests.swift in Sources */,
+				B78761C02A6DB86C00C0681C /* RegisterInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

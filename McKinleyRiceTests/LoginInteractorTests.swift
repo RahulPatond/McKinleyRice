@@ -46,13 +46,10 @@ final class LoginInteractorTests: XCTestCase {
         var error: Error?
         
         func presentLogin(response: Login.Response) {
-            if let error = response.error {
-                self.error = error
-                self.token = nil
-            } else {
-                token = response.token
-                self.error = response.error
-            }
+            
+            self.error = response.error
+            self.token = response.token
+            
         }
     }
     
